@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Uploads (이미지 파일)
+uploads/
+
+# Database
+*.db
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
