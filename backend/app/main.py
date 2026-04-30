@@ -60,18 +60,18 @@ app.include_router(admin_order.router)
 app.include_router(customer_order.router)
 app.include_router(sse.router)
 
-# 팀원 B 담당: Auth, Menu, Table/Session (구현 후 아래 주석 해제)
-# from app.routers import admin_auth
-# from app.routers import admin_menu
-# from app.routers import admin_table
-# from app.routers import customer_menu    # 고객 메뉴 조회
-# from app.routers import customer_table   # 고객 테이블 검증
+# 팀원 B 담당: Auth, Menu, Table/Session
+from app.routers import admin_auth
+from app.routers import admin_menu
+from app.routers import admin_table
+from app.routers import customer_menu    # 고객 메뉴 조회
+from app.routers import customer_table   # 고객 테이블 검증
 
-# app.include_router(admin_auth.router)
-# app.include_router(admin_menu.router)
-# app.include_router(admin_table.router)
-# app.include_router(customer_menu.router)
-# app.include_router(customer_table.router)
+app.include_router(admin_auth.router)
+app.include_router(admin_menu.router)
+app.include_router(admin_table.router)
+app.include_router(customer_menu.router)
+app.include_router(customer_table.router)
 
 
 @app.get("/health")
